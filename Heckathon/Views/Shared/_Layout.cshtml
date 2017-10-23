@@ -1,0 +1,75 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>PMC IUI</title>
+    <script src="~/Scripts/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="~/Scripts/alasql.min.js"></script>
+    <script src="~/Scripts/xlsx.core.min.js"></script>
+    @Styles.Render(new string[] { "~/css" })
+    @Scripts.Render(new string[] { "~/js" })
+
+    <script data-main="Scripts/app/main.js" src="~/Scripts/require.js"></script>
+    <link rel="icon" type="image/ico" href="~/favicon.ico">
+
+    <!-- OFFCANVAS - Please do NOT place higher in header (things break in mobile view) -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/off-canvas.css">
+    <script type="text/javascript" src="~/Scripts/off-canvas.js"></script>
+
+    <!-- Placed separately for the collapsible menu item in small screen size -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/tableHeadFixer.js"></script>
+
+    <!-- Placed separately for the excel download functionality -->
+    <script src="~/Scripts/FileSaver.js" type="text/javascript"></script>
+</head>
+
+<body ng-cloak ng-controller="indexController">
+    <a name="top"></a>
+
+    <div class="hidden-xs hidden-sm visible-md visible-lg">
+        <div class="masthead">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 top-offset-10 ">
+                        <div class="logo">  <a id="max_logo_link" href="#/"><img class="logo" src="Content/images/logo.png" /></a></div>
+                        <div class="main_title visible-md visible-lg hidden-xs hidden-sm col-sm-5 col-md-5 col-lg-5">
+                            <h1>PMC</h1>
+                        </div>
+
+                        <ul class="navbar-top-links navbar-right">
+                            <li style="margin-right:40px">
+
+                                <div id="max_current_user_name"><i class="icon-small-useraccount text-white" aria-hidden="true"></i><strong> Welcome:</strong> Rishabh </div>
+                                <div id="max_current_user_role_name" style="margin-left: 20px;">
+                                    <strong>Active Role:</strong> Admin
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+   
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

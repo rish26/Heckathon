@@ -1,0 +1,333 @@
+/* Elements alphabetized. Different resolutions next to relevant element, not clumped together. */
+
+.authenticated {
+    background: url(../images/ie9-signedin-tr-28px.png) no-repeat!important;
+    width: 200px!important;
+}
+
+.logo { 
+    float: left;
+	margin-left:20px; 
+}
+    @media (max-width:768px) {
+        .logo a img {
+            width: 32px!important;
+            height: 32px!important;
+            margin-left: 5px;
+        }
+    }
+.logo a img {
+    width: 42px;
+    height: 42px;
+}
+
+#mainmenu,
+#mainmenu ul,
+#mainmenu ul li,
+#mainmenu ul li a,
+#mainmenu #menu-button {
+  margin: 0px;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#mainmenu:after,
+#mainmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+#mainmenu #menu-button {
+  display: none;
+}
+#mainmenu {
+  width: auto;
+  margin-top: -8px; 
+  margin-left: 0px;
+}
+#mainmenu > ul {
+
+}
+#mainmenu.align-right > ul > li {
+  float: right;
+}
+#mainmenu > ul > li {
+  float: left;
+  display: inline-block;
+}
+#mainmenu.align-center > ul {
+  float: none;
+  text-align: center;
+}
+#mainmenu.align-center > ul > li {
+  float: none;
+}
+#mainmenu.align-center ul ul {
+  text-align: left;
+}
+#mainmenu > ul > li > a {
+  padding: 8px 20px 6px 20px;
+  text-decoration: none;
+ 
+  
+  line-height: 1.428571429em;
+  color: #fff;  
+}
+
+#mainmenu > ul > li:hover > a,
+#mainmenu > ul > li > a:hover,
+#mainmenu > ul > li.active > a {
+  color: #007db8;
+  background: #ffffff;
+  border-left: 1px solid #007db8;
+}
+#mainmenu ul ul {
+  position: absolute;
+  left: -9999px;
+  top: 60px;
+  padding-top: 0px;
+  
+  opacity: 0;
+}
+#mainmenu.align-right ul ul {
+  text-align: right;
+}
+#mainmenu > ul > li > ul::after {  
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: #ffffff;
+  top: -4px;
+  left: 20px;
+}
+#mainmenu.align-right > ul > li > ul::after {
+  left: auto;
+  right: 20px;
+}
+#mainmenu ul ul ul::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-right-color: #ffffff;
+  top: 11px;
+  left: -4px;
+}
+#mainmenu.align-right ul ul ul::after {
+  border-right-color: transparent;
+  border-left-color: #ffffff;
+  left: auto;
+  right: -4px;
+}
+#mainmenu > ul > li > ul {
+  margin-top: -2px;
+}
+
+
+
+#mainmenu > ul > li:hover > ul {
+  top: 36px;
+  left: 0;
+  opacity: 1;
+  border-right:1px solid #cce7f3; border-left:1px solid #cce7f3; 
+  border-bottom:3px solid #0087c7;
+}
+#mainmenu.align-right > ul > li:hover > ul {
+  left: auto;
+  right: 0;
+}
+#mainmenu ul ul ul {
+  padding-top: 0;
+  padding-left: 6px;
+  border-right:1px solid #cce7f3;
+  border:1px solid #cce7f3;
+}
+#mainmenu.align-right ul ul ul {
+  padding-right: 6px;
+}
+#mainmenu ul ul > li:hover > ul {
+  left: 180px;
+  top: 0;
+  opacity: 1;
+}
+#mainmenu.align-right ul ul > li:hover > ul {
+  left: auto;
+  right: 100%;
+  opacity: 1;
+}
+#mainmenu ul ul li a {
+  text-decoration: none;
+  padding: 8px 25px 8px 15px;
+  width: 180px;
+  color: #007db8;
+  background: #ffffff;  
+}
+
+#mainmenu ul ul.contaiiner-menu li a {
+	width: 220px;
+}
+
+
+#mainmenu ul ul li:hover > a,
+#mainmenu ul ul li.active > a {
+  color: #007db8;
+  background:#cce7f3;
+}
+    @media (max-width: 768px) {
+      #mainmenu {
+        display: none;
+      }
+    }
+
+
+@media only screen and (min-width:993px)  {
+    .main_title { 
+        
+        font-size:32px; 
+        line-height:40px; 
+        font-weight:normal; 
+        float:left;  
+    }
+}    
+@media only screen and (min-width:769px) and (max-width:992px) {    
+    .main_title { 
+       
+        font-size:30px; 
+        line-height:36px; 
+        font-weight:normal; 
+        float:left; 
+        margin-left: 15px;
+    }
+}
+@media (max-width:768px) {
+    .main_title { 
+        visibility: hidden;
+    }
+}
+
+
+
+@media (max-width:768px) {  
+    .masthead-shadow-section {
+        content: "";
+        width: 80%;
+        height: 10px;
+        left: 10%;
+        border-radius: 50%;
+        box-shadow: 0 0 18px rgba(0,0,0,0.5);
+        margin: -10px auto 0;
+    }
+}
+
+
+
+.masthead-skinny {
+    background-color:#007db8; 
+    height:auto; 
+    width:100%; 
+    position:relative; 
+    color:#ffffff; 
+    z-index:999; 
+    height:65px; 
+    padding-top:12px;
+}
+    @media only screen and (max-width:768px) {
+        .masthead-skinny {
+            height: 60px;
+        }
+    }
+
+
+.menu-shadow {  
+    font-size: 2px; 
+    margin-top: -11px;
+}
+.menu-shadow img {
+    height: 11px;
+    width: 100%;
+}
+    @media (max-width:992px) {  
+        .menu-shadow { 
+            display: none;
+        }
+    }
+.menu-toggle {
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    z-index:999;
+}
+    @media (max-width:768px) {  
+        .menu-toggle { 
+            margin-right: 5px;           
+            margin-top: 7px;
+        }
+    }
+
+.offset-15-r {
+    margin-right:15px;
+}
+
+.row1 { 
+    height:65px; 
+}
+.row2 { 
+    margin-top:10px; 
+    height:auto; 
+}
+@media (max-width:768px) {
+    .row1 { 
+        margin-left:5px; 
+        margin-right:5px; 
+        margin-top: 10px;
+        height:60px; 
+        min-height:60px;
+        background-color:#007db8;
+        padding-top:15px;
+        padding-left:10px;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:992px) {  
+    .row1 {
+        padding-top: 10px;
+    }
+}
+@media only screen and (min-width:993px)  {
+    .row1 {
+        padding-top: 15px;
+    }
+}
+
+
+
+#sidebar {
+    min-height: 1500px;
+}
+
+
+
+.username {  
+    float: right; 
+    width: 40%; 
+    margin-right: 15px; 
+    font-size: 14px; 
+    padding: 5px 0px 5px 30px; 
+    margin-top: 5px; 
+}
+.username a { 
+    color: #fff; 
+} 
+.username a:hover { 
+    color: #fff; 
+    text-decoration: underline; 
+}
+
